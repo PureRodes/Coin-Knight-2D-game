@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dx1ck683ry1qe"]
+
+[ext_resource type="FontFile" uid="uid://dpo1cku1kex2x" path="res://assets/fonts/PixelOperator8.ttf" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://ch54ufqtornkh" path="res://scenes/hud.gd" id="1_oo0fn"]
+
+[node name="HUD" type="CanvasLayer" unique_id=426645087 groups=["hud"]]
+script = ExtResource("1_oo0fn")
+
+[node name="CoinsLabel" type="Label" parent="." unique_id=158416424]
+offset_left = 789.0
+offset_top = 18.0
+offset_right = 1083.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0.8535331, 0.9359126, 0.2179637, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 36
+text = "Coins : 0/0"
+
+[node name="PopupLabel" type="Label" parent="." unique_id=127654350]
+offset_left = 963.0
+offset_top = 61.0
+offset_right = 1110.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0, 1, 0.58431375, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 24
+text = "+1 Coin!"
+
+[node name="WinLabel" type="Label" parent="." unique_id=1675423209]
+offset_left = 173.0
+offset_top = 312.0
+offset_right = 1413.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(0.15686275, 0.8666667, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.25882354, 0.25882354, 0.25882354, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 56
+text = "All Coins Collected!"
+
+[node name="DeathLabel" type="Label" parent="." unique_id=1161246145]
+offset_left = 410.0
+offset_top = 320.0
+offset_right = 1016.0
+offset_bottom = 368.0
+theme_override_colors/font_color = Color(0.98960656, 0, 0.18684858, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 48
+text = "You Died!"
